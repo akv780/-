@@ -96,3 +96,18 @@ function handleForm(event){
   document.querySelectorAll('.gear-grid label.checked').forEach(label => label.classList.remove('checked'));
   return false;
 }
+
+
+// Light parallax for the animated Alatau background.
+const animatedHero = document.querySelector('.animated-alatau');
+if (animatedHero && !window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+  const back = animatedHero.querySelector('.mountain-back');
+  const mid = animatedHero.querySelector('.mountain-mid');
+  const front = animatedHero.querySelector('.mountain-front');
+  window.addEventListener('scroll', () => {
+    const y = Math.min(window.scrollY, window.innerHeight);
+    if (back) back.style.translate = `0 ${y * 0.018}px`;
+    if (mid) mid.style.translate = `0 ${y * 0.012}px`;
+    if (front) front.style.translate = `0 ${y * 0.006}px`;
+  }, { passive: true });
+}
