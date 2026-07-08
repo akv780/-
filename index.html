@@ -1,0 +1,333 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Alatau Routes — горные маршруты Алматы для туристов</title>
+  <meta name="description" content="Готовые маршруты по горам Алматы и Алматинской области для новичков и подготовленных туристов. Подбор маршрута, чек-лист экипировки, безопасность и заявка на сопровождение." />
+  <meta name="keywords" content="маршруты Алматы, горные маршруты Алматы, походы в горы Алматы, треккинг Алматы, горы Алматы для новичков, походы Алматы с гидом" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <div class="page-progress" aria-hidden="true"><span></span></div>
+  <div class="section-transition" aria-hidden="true"></div>
+  <header class="topbar">
+    <a class="logo" href="#home" aria-label="Alatau Routes"><span>▲</span> Alatau Routes</a>
+    <nav class="nav" aria-label="Основное меню">
+      <a href="#levels">Уровни</a>
+      <a href="#routes">Маршруты</a>
+      <a href="#prepare">Подготовка</a>
+      <a href="#safety">Безопасность</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <button class="menu-toggle" type="button" aria-label="Открыть меню" aria-expanded="false">☰</button>
+    <a class="btn btn-small" href="#request">Оставить заявку</a>
+  </header>
+
+  <main id="home">
+    <section class="hero section-pad">
+      <div class="container hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow">Горные маршруты Алматы и Алматинской области</p>
+          <h1>Горный маршрут в Алматы — подобранный под ваш темп, опыт и даты</h1>
+          <p class="lead">Сервис подбора маршрутов для туристов: лёгкие прогулки, треккинги для подготовленных гостей, чек‑лист экипировки, логистика и заявка на сопровождение.</p>
+          <div class="hero-actions">
+            <a class="btn" href="#routes">Выбрать маршрут</a>
+            <a class="btn btn-outline" href="#prepare">Получить чек-лист</a>
+          </div>
+          <div class="trust-row" aria-label="Преимущества">
+            <span>✓ Маршруты по уровню</span>
+            <span>✓ Безопасная подготовка</span>
+            <span>✓ Заявка на гида/трансфер</span>
+          </div>
+        </div>
+        <aside class="hero-visual" aria-label="Быстрый подбор маршрута"><div class="hero-panel">
+          <div class="card-tag">Быстрый подбор</div>
+          <h2>Начните с короткой консультации</h2>
+          <p>Как в персональном сервисе: уточняем ваши даты, уровень, желаемые виды и ограничения — затем предлагаем безопасный сценарий дня.</p>
+          <ul class="mini-list">
+            <li>Сколько часов готовы идти?</li>
+            <li>Нужен ли гид?</li>
+            <li>Есть ли опыт походов?</li>
+            <li>Хотите горы, водопады, озеро или панораму?</li>
+          </ul>
+          <a class="btn btn-full" href="#request">Подобрать маршрут</a>
+        </div></aside>
+      </div>
+    </section>
+
+    <section class="container section" id="audience">
+      <div class="section-head">
+        <p class="eyebrow">Для кого</p>
+        <h2>Сайт для туристов, которые хотят увидеть горы Алматы без лишнего риска</h2>
+      </div>
+      <div class="feature-grid four">
+        <article><span class="icon">🧭</span><h3>Впервые в Алматы</h3><p>Понятные маршруты рядом с городом, без долгого самостоятельного поиска.</p></article>
+        <article><span class="icon">🥾</span><h3>Новички</h3><p>Лёгкие прогулки и тропы с умеренной нагрузкой, где важна правильная подготовка.</p></article>
+        <article><span class="icon">⛰️</span><h3>Любители гор</h3><p>Более длинные треккинги для тех, кто уже ходил и хочет красивее и выше.</p></article>
+        <article><span class="icon">🛡️</span><h3>Осторожные туристы</h3><p>Фокус на погоде, экипировке, логистике и выборе маршрута по реальному уровню.</p></article>
+      </div>
+    </section>
+
+    <section class="section soft" id="levels">
+      <div class="container">
+        <div class="section-head center">
+          <p class="eyebrow">Выберите свой уровень</p>
+          <h2>Не все маршруты одинаковы. Начните с честной оценки подготовки</h2>
+        </div>
+        <div class="level-grid">
+          <article class="level-card">
+            <div class="level-num">01</div><h3>Новичок</h3>
+            <p>Хочу красивые виды, но без тяжёлого набора высоты и сложных участков.</p>
+            <a href="#beginners">Смотреть маршруты</a>
+          </article>
+          <article class="level-card highlighted">
+            <div class="level-num">02</div><h3>Средний уровень</h3>
+            <p>Готов идти 4–6 часов, есть базовая выносливость, нужна понятная логистика.</p>
+            <a href="#routes">Подобрать вариант</a>
+          </article>
+          <article class="level-card">
+            <div class="level-num">03</div><h3>Продвинутый любитель</h3>
+            <p>Есть опыт треккинга, готов к длинному дню, набору высоты и переменчивой погоде.</p>
+            <a href="#advanced">Смотреть маршруты</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="consult-strip" aria-label="Быстрый сценарий консультации">
+      <div class="container">
+        <div>
+          <p class="eyebrow">Формат как у сервисного сайта</p>
+          <h2>Персональный подбор маршрута вместо случайного списка троп</h2>
+          <p>Структура переоформлена по логике Wix-шаблона для коучинга: экспертность, запись на консультацию, понятные пакеты и доверительный сервисный путь.</p>
+        </div>
+        <a class="btn" href="#request">Записаться на подбор</a>
+      </div>
+    </section>
+
+    <section class="container section" id="services">
+      <div class="section-head center reveal">
+        <p class="eyebrow">Сервисные форматы</p>
+        <h2>Выберите не маршрут, а понятный формат подготовки</h2>
+        <p class="muted narrow center-text">Как в коучинг-шаблоне Wix: сначала понятная услуга, затем запись на консультацию. Для горного сервиса это снижает тревожность и помогает туристу сделать первый шаг.</p>
+      </div>
+      <div class="service-grid">
+        <article class="service-card reveal">
+          <span class="service-num">01</span>
+          <h3>Подбор маршрута</h3>
+          <p>Короткая консультация по датам, уровню подготовки, погоде, желаемым видам и длительности прогулки.</p>
+          <a href="#request" class="link-btn">Запросить подбор →</a>
+        </article>
+        <article class="service-card feature reveal">
+          <span class="service-num">02</span>
+          <h3>Маршрут с гидом</h3>
+          <p>Для туристов, которые хотят идти спокойнее: темп группы, точки разворота, рекомендации по экипировке и логистике.</p>
+          <a href="#request" class="link-btn">Оставить заявку →</a>
+        </article>
+        <article class="service-card reveal">
+          <span class="service-num">03</span>
+          <h3>Маршрут + подготовка</h3>
+          <p>Чек-лист вещей, рекомендации за день до выхода, список рисков и адаптация маршрута под сезон.</p>
+          <a href="#prepare" class="link-btn">Смотреть чек-лист →</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="container section" id="routes">
+      <div class="section-head split">
+        <div>
+          <p class="eyebrow">Популярные маршруты</p>
+          <h2>Готовые идеи для первого или следующего выхода в горы</h2>
+        </div>
+        <p class="muted narrow">Параметры указаны ориентировочно. Перед выходом нужно проверить погоду, доступность тропы, сезонные ограничения и состояние группы.</p>
+      </div>
+      <div class="filters" role="tablist" aria-label="Фильтр маршрутов">
+        <button class="filter active" data-filter="all">Все</button>
+        <button class="filter" data-filter="beginner">Новичкам</button>
+        <button class="filter" data-filter="medium">Средний</button>
+        <button class="filter" data-filter="advanced">Продвинутым</button>
+      </div>
+      <div class="route-grid animated-grid">
+        <article class="route-card" data-level="beginner" id="kok-zhailau">
+          <div class="route-img gradient-1"></div><div class="route-body"><span class="badge easy">Новичок</span><h3>Кок-Жайляу</h3><p>Лес, открытые поляны и виды на Заилийский Алатау. Хороший выбор для первого дневного похода.</p><dl><dt>Время</dt><dd>3–6 ч</dd><dt>Сезон</dt><dd>весна–осень</dd><dt>Набор</dt><dd>уточнить перед выходом</dd></dl><a href="#request" class="link-btn">Оставить заявку →</a></div>
+        </article>
+        <article class="route-card" data-level="beginner">
+          <div class="route-img gradient-2"></div><div class="route-body"><span class="badge easy">Новичок</span><h3>Медеу — Шымбулак</h3><p>Самый понятный горный старт для гостей Алматы: инфраструктура, виды, кафе и канатная дорога по сезону.</p><dl><dt>Время</dt><dd>2–4 ч</dd><dt>Сезон</dt><dd>круглый год</dd><dt>Формат</dt><dd>прогулка/лайт-трек</dd></dl><a href="#request" class="link-btn">Оставить заявку →</a></div>
+        </article>
+        <article class="route-card" data-level="beginner">
+          <div class="route-img gradient-3"></div><div class="route-body"><span class="badge easy">Новичок</span><h3>Бутаковское ущелье</h3><p>Маршрут к лесным видам и водопадам. Подходит новичкам при нормальной погоде и адекватной обуви.</p><dl><dt>Время</dt><dd>3–5 ч</dd><dt>Сезон</dt><dd>весна–осень</dd><dt>Риск</dt><dd>грязь, скользкие участки</dd></dl><a href="#request" class="link-btn">Оставить заявку →</a></div>
+        </article>
+        <article class="route-card" data-level="medium">
+          <div class="route-img gradient-4"></div><div class="route-body"><span class="badge medium">Средний</span><h3>Большое Алматинское ущелье</h3><p>Красивые горные пейзажи и варианты маршрутов разной длины. Доступность отдельных зон нужно уточнять заранее.</p><dl><dt>Время</dt><dd>3–6 ч</dd><dt>Сезон</dt><dd>по условиям</dd><dt>Важно</dt><dd>проверить ограничения</dd></dl><a href="#request" class="link-btn">Оставить заявку →</a></div>
+        </article>
+        <article class="route-card" data-level="advanced">
+          <div class="route-img gradient-5"></div><div class="route-body"><span class="badge hard">Продвинутый</span><h3>Фурмановка / Панорама</h3><p>Длинный треккинг с набором высоты и открытыми видами. Лучше идти подготовленным и не в плохую погоду.</p><dl><dt>Время</dt><dd>5–8 ч</dd><dt>Сезон</dt><dd>лето–осень</dd><dt>Гид</dt><dd>рекомендуется</dd></dl><a href="#request" class="link-btn">Оставить заявку →</a></div>
+        </article>
+        <article class="route-card" data-level="advanced">
+          <div class="route-img gradient-6"></div><div class="route-body"><span class="badge hard">Продвинутый</span><h3>Туюк-Су / Мынжылкы</h3><p>Высокогорный район для опытных туристов. Это уже серьёзнее обычной прогулки: нужна погода, экипировка и трезвая оценка сил.</p><dl><dt>Время</dt><dd>6–9 ч</dd><dt>Сезон</dt><dd>лето–ранняя осень</dd><dt>Риск</dt><dd>высота, холод, погода</dd></dl><a href="#request" class="link-btn">Оставить заявку →</a></div>
+        </article>
+      </div>
+    </section>
+
+    <section class="section soft" id="beginners">
+      <div class="container two-col">
+        <div>
+          <p class="eyebrow">Страница</p><h2>Маршруты для новичков</h2>
+          <p class="lead-sm">Подойдут туристам без серьёзного походного опыта. Главная цель — красивые виды, умеренная нагрузка и понятная логистика.</p>
+          <div class="route-list">
+            <div><b>Кок-Жайляу</b><span>Лес, поляны, панорамы. Хорошо для первого знакомства с горами.</span></div>
+            <div><b>Медеу — Шымбулак</b><span>Прогулка с инфраструктурой, удобно для гостей города.</span></div>
+            <div><b>Бутаковское ущелье</b><span>Лесной маршрут, водопады, сезонно возможны скользкие участки.</span></div>
+            <div><b>Прогулочные маршруты у Медеу</b><span>Лёгкий формат на 1–3 часа, подходит при ограниченном времени.</span></div>
+          </div>
+        </div>
+        <div class="info-panel">
+          <h3>Что важно новичку</h3>
+          <ul class="check-list">
+            <li>Не выбирать маршрут только по красивым фото.</li>
+            <li>Идти в удобной обуви с протектором.</li>
+            <li>Брать воду, перекус, ветровку и заряженный телефон.</li>
+            <li>Проверять погоду и состояние тропы утром перед выходом.</li>
+            <li>При сомнениях брать гида или выбирать более лёгкий вариант.</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="advanced">
+      <div class="two-col reverse">
+        <div class="info-panel dark">
+          <h3>Продвинутый треккинг ≠ альпинизм</h3>
+          <p>Фурмановка, Панорама, Букреева, Туюк-Су и Мынжылкы требуют опыта, выносливости и правильной экипировки. Не стоит подавать такие маршруты как обычную прогулку.</p>
+          <p>Перед выходом проверяются погода, состояние тропы, световой день, самочувствие группы и возможность безопасного разворота.</p>
+        </div>
+        <div>
+          <p class="eyebrow">Страница</p><h2>Маршруты для продвинутых любителей гор</h2>
+          <div class="route-list">
+            <div><b>Фурмановка / Панорама</b><span>Длинный день, набор высоты, открытые гребни и панорамы.</span></div>
+            <div><b>Пик Букреева</b><span>Для подготовленных туристов; идти лучше с опытным сопровождающим.</span></div>
+            <div><b>Туюк-Су</b><span>Высокогорный район, резкая смена погоды, нужна тёплая одежда.</span></div>
+            <div><b>Озеро Мынжылкы</b><span>Красивый, но требовательный маршрут по погоде, высоте и времени.</span></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section soft" id="why">
+      <div class="container">
+        <div class="section-head center"><p class="eyebrow">Почему готовый маршрут</p><h2>Меньше случайностей — больше удовольствия от гор</h2></div>
+        <div class="feature-grid five">
+          <article><h3>Безопасность</h3><p>Маршрут выбирается по уровню, погоде и сезону, а не только по фото.</p></article>
+          <article><h3>Экономия времени</h3><p>Не нужно собирать информацию по форумам, картам и случайным отзывам.</p></article>
+          <article><h3>Логистика</h3><p>Понятно, где старт, как доехать, сколько идти и когда разворачиваться.</p></article>
+          <article><h3>Подбор нагрузки</h3><p>Новичку не предлагают то, что подходит только подготовленным людям.</p></article>
+          <article><h3>Экипировка</h3><p>Вы заранее знаете, что взять с собой, а что будет лишним.</p></article>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section" id="prepare">
+      <div class="section-head split"><div><p class="eyebrow">Шаблон подготовки</p><h2>Соберите поход как чек-лист, а не как стресс</h2></div><a class="btn btn-outline" href="#request">Запросить чек-лист</a></div>
+      <div class="prep-grid">
+        <article class="prep-card"><h3>1. Информация о маршруте</h3><p>Название, дата, старт, финиш, уровень, дистанция, набор высоты, прогноз, контакт организатора.</p></article>
+        <article class="prep-card"><h3>2. Физическая готовность</h3><p>Проверьте сон, самочувствие, обувь, опыт, ограничения по здоровью и готовность идти 3–8 часов.</p></article>
+        <article class="prep-card"><h3>3. Экипировка</h3><p>Одежда слоями, обувь с протектором, вода, еда, аптечка, фонарик, power bank, офлайн-карта.</p></article>
+        <article class="prep-card"><h3>4. За день до выхода</h3><p>Проверить погоду, скачать карту, зарядить телефон, собрать рюкзак, сообщить близким маршрут.</p></article>
+      </div>
+      <div class="gear-box">
+        <h3>Чек-лист экипировки</h3>
+        <div class="gear-grid">
+          <label><input type="checkbox"> Базовый слой / футболка</label><label><input type="checkbox"> Флиска или утепляющий слой</label><label><input type="checkbox"> Ветровка или мембрана</label><label><input type="checkbox"> Треккинговые брюки</label><label><input type="checkbox"> Обувь с протектором</label><label><input type="checkbox"> Запасные носки</label><label><input type="checkbox"> Рюкзак 15–30 л</label><label><input type="checkbox"> Вода и термос по сезону</label><label><input type="checkbox"> Перекус / лёгкий обед</label><label><input type="checkbox"> Аптечка и личные лекарства</label><label><input type="checkbox"> Солнцезащитный крем и очки</label><label><input type="checkbox"> Фонарик и power bank</label><label><input type="checkbox"> Офлайн-карта</label><label><input type="checkbox"> Документы и наличные</label><label><input type="checkbox"> Мусорный пакет</label>
+        </div>
+      </div>
+    </section>
+
+    <section class="section dark-section" id="safety">
+      <div class="container safety-grid">
+        <div><p class="eyebrow light">Безопасность</p><h2>Горы красивы, но условия меняются быстро</h2><p>Мы не обещаем абсолютную безопасность. Правильная подготовка снижает риски, но не отменяет необходимость думать, проверять условия и разворачиваться при ухудшении ситуации.</p></div>
+        <ul class="safety-list">
+          <li>Не ходите одному на сложные маршруты.</li>
+          <li>Не выходите без проверки прогноза и состояния тропы.</li>
+          <li>Не идите выше своего уровня подготовки.</li>
+          <li>Возвращайтесь при грозе, тумане, сильном ветре или резком похолодании.</li>
+          <li>Не сходите с тропы без необходимости.</li>
+          <li>Берегите природу и забирайте мусор с собой.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="container section" id="how">
+      <div class="section-head center"><p class="eyebrow">Как это работает</p><h2>От заявки до маршрута — 4 шага</h2></div>
+      <div class="steps"><div><span>1</span><h3>Вы выбираете уровень</h3><p>Новичок, средний или продвинутый.</p></div><div><span>2</span><h3>Мы уточняем детали</h3><p>Даты, время, группа, опыт, ограничения.</p></div><div><span>3</span><h3>Получаете план</h3><p>Маршрут, логистика, чек‑лист и рекомендации.</p></div><div><span>4</span><h3>Выходите на маршрут</h3><p>Самостоятельно или с гидом — по выбранному формату.</p></div></div>
+    </section>
+
+    <section class="section soft" id="reviews">
+      <div class="container"><div class="section-head center"><p class="eyebrow">Отзывы</p><h2>Как это может звучать после похода</h2></div><div class="review-grid"><blockquote>«Приехали в Алматы на 3 дня и не понимали, куда идти. Нам предложили простой маршрут, список вещей и понятный старт. Без стресса.»<cite>Марина, турист из Астаны</cite></blockquote><blockquote>«Хотелось не просто Медеу, а полноценный день в горах. Получили маршрут по силам и заранее поняли, что взять.»<cite>Игорь, Алматы/Москва</cite></blockquote><blockquote>«Самое ценное — честно сказали, что сложный маршрут лучше перенести из-за погоды. В итоге выбрали безопаснее и всё равно красиво.»<cite>Анна, гостья из Европы</cite></blockquote></div></div>
+    </section>
+
+    <section class="container section" id="request">
+      <div class="request-grid">
+        <div>
+          <p class="eyebrow">Заявка</p><h2>Подберём маршрут под ваши даты, опыт и цель поездки</h2>
+          <p class="lead-sm">Оставьте контакты и параметры поездки. После заявки вам помогут выбрать маршрут, объяснят подготовку, подскажут по гиду, трансферу и экипировке. Заявка не обязывает к оплате или бронированию.</p>
+          <div class="names"><b>Варианты названия проекта:</b><span>Alatau Routes</span><span>Almaty Mountain Guide</span><span>Gory Almaty</span><span>Almaty Trail Service</span><span>Походы Алматы</span></div>
+        </div>
+        <form class="form" onsubmit="return handleForm(event)">
+          <label>Имя<input required name="name" placeholder="Например, Андрей"></label>
+          <label>Телефон / WhatsApp<input required name="phone" placeholder="+7 ..."></label>
+          <label>Email<input type="email" name="email" placeholder="mail@example.com"></label>
+          <label>Даты пребывания<input name="dates" placeholder="Например, 12–16 августа"></label>
+          <label>Количество человек<input name="people" type="number" min="1" placeholder="2"></label>
+          <label>Уровень подготовки<select name="level"><option>Новичок</option><option>Средний уровень</option><option>Продвинутый любитель</option></select></label>
+          <label>Интересующий маршрут<input name="route" placeholder="Кок-Жайляу, Фурмановка..."></label>
+          <label>Что нужно?<select name="needs"><option>Подбор маршрута</option><option>Гид</option><option>Трансфер</option><option>Помощь с экипировкой</option><option>Индивидуальный маршрут</option></select></label>
+          <label class="full">Комментарий<textarea name="comment" rows="4" placeholder="Опыт, ограничения, что хотите увидеть"></textarea></label>
+          <button class="btn btn-full" type="submit">Отправить заявку</button>
+          <p class="form-note" id="formNote">Демо-форма: данные не отправляются на сервер. Подключите Telegram, WhatsApp, CRM или email.</p>
+        </form>
+      </div>
+    </section>
+
+    <section class="section soft" id="faq">
+      <div class="container">
+        <div class="section-head center"><p class="eyebrow">FAQ</p><h2>Частые вопросы туристов</h2></div>
+        <div class="faq-list">
+          <details open><summary>Можно ли идти новичку?</summary><p>Да, но выбирать нужно лёгкие маршруты и не переоценивать силы. Для первого раза лучше Кок-Жайляу, Медеу—Шымбулак или короткие прогулочные маршруты.</p></details>
+          <details><summary>Нужна ли специальная обувь?</summary><p>Для простых прогулок достаточно удобных кроссовок с хорошим протектором. Для треккинга нужны треккинговые ботинки или крепкие кроссовки.</p></details>
+          <details><summary>Можно ли идти без гида?</summary><p>На простых маршрутах — иногда да, если есть карта, связь, погода нормальная и вы понимаете маршрут. На сложные маршруты лучше идти с гидом.</p></details>
+          <details><summary>Когда лучший сезон?</summary><p>Обычно комфортнее весной, летом и осенью. Зимой маршруты требуют отдельной подготовки, тёплой экипировки и проверки лавинных/погодных рисков.</p></details>
+          <details><summary>Что делать, если погода испортилась?</summary><p>Не геройствовать: сократить маршрут, развернуться или перенести поход. Гроза, туман, сильный ветер и резкое похолодание — серьёзные причины отменить выход.</p></details>
+          <details><summary>Подходят ли маршруты для детей?</summary><p>Некоторые короткие прогулки могут подойти детям, но нужно учитывать возраст, погоду, обувь, темп и возможность быстро вернуться.</p></details>
+          <details><summary>Можно ли арендовать экипировку?</summary><p>На сайте можно предусмотреть услугу помощи с экипировкой. Наличие конкретных вещей нужно подтверждать перед датой похода.</p></details>
+          <details><summary>Есть ли трансфер?</summary><p>Форма заявки включает поле трансфера. Для каждого маршрута логистика уточняется отдельно.</p></details>
+          <details><summary>Сколько воды брать?</summary><p>Для однодневного похода часто ориентируются на 1–2 литра на человека, но объём зависит от погоды, длительности, нагрузки и наличия источников.</p></details>
+          <details><summary>Что делать, если я боюсь высоты?</summary><p>Лучше выбрать лесной или ущельный маршрут без открытых гребней и заранее указать это в анкете.</p></details>
+        </div>
+      </div>
+    </section>
+
+    <section class="container section seo-block">
+      <div class="section-head"><p class="eyebrow">SEO и развитие</p><h2>Структура для продвижения</h2></div>
+      <div class="seo-grid">
+        <div><h3>SEO title</h3><p>Горные маршруты Алматы для туристов — походы, треккинг и гиды</p></div>
+        <div><h3>SEO description</h3><p>Выберите маршрут в горы Алматы: варианты для новичков и подготовленных туристов, чек-лист экипировки, безопасность, гид и трансфер.</p></div>
+        <div><h3>Ключевые фразы</h3><p>маршруты Алматы, горные маршруты Алматы, походы в горы Алматы, треккинг Алматы, маршруты для туристов Алматы, горы Алматы для новичков, походы Алматы с гидом, маршруты Алматинская область, что взять в поход Алматы.</p></div>
+        <div><h3>Идеи развития</h3><p>Блог о горах, календарь сезонных маршрутов, страница безопасности, маршруты на 1 день, групповые походы, аренда экипировки, трансфер к маршрутам.</p></div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-grid">
+      <div><a class="logo" href="#home"><span>▲</span> Alatau Routes</a><p>Маршруты, подготовка и заявки на походы по Алматы и Алматинской области.</p></div>
+      <div><b>Важно</b><p>Перед выходом проверяйте погоду, доступность маршрута и состояние троп. Сайт не заменяет профессиональную оценку риска.</p></div>
+      <div><b>Источники для проверки</b><p>Visit Almaty, Shymbulak, локальные треккинг-клубы и актуальные погодные сервисы.</p></div>
+    </div>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
