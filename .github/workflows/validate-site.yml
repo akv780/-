@@ -1,0 +1,31 @@
+name: Validate static site
+
+on:
+  pull_request:
+  push:
+    branches:
+      - main
+
+permissions:
+  contents: read
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Check out repository
+        uses: actions/checkout@v4
+
+      - name: Validate entry page
+        shell: bash
+        run: |
+          test -f index.html
+          python -c "from pathlib import Path; text = Path('index.html').read_text(encoding='utf-8').lower(); assert '<!doctype html' in text; assert '</html>' in text"
+
+      - name: Reject unresolved merge conflicts
+        shell: bash
+        run: |
+          if git grep -nE '^(<<<<<<<|=======|>>>>>>>)' -- . ':!*.md'; then
+            echo 'Unresolved merge-conflict markers found.'
+            exit 1
+          fi
